@@ -4,12 +4,13 @@
 /**
  * main - Entry point
  *
- * REturn: 0 means success
+ * Return: 0 means success
  */
+
 int main(void)
 {
 	int n;
-	l= n%10
+	l = n % 10
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 	if (l > 5)
