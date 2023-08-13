@@ -15,12 +15,9 @@ int main(void)
 		putchar(i + '0');
 		if (i == 9)
 			continue;
-		else
-		{
 		putchar(',');
 		putchar(' ');
 		i++;
-		}
 	}
 	putchar('\n');
 	return (0);
