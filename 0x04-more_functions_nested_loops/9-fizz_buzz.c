@@ -36,6 +36,7 @@ int main(void)
 			putchar("%d ", i);
 		}
 		printf("\n");
-		return (0);
+		i++;
 	}
+	return (0);
 }
