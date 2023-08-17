@@ -9,11 +9,11 @@ int main(void)
 {
 	int r;
 
-	r = _islower('H');
+	r = _isupper('H');
 	_putchar(r + '0');
-	r = _islower('o');
+	r = _isupper('o');
 	_putchar(r + '0');
-	r = _islower(108);
+	r = _isupper(108);
 	_putchar(r + '0');
 	_putchar('\n');
 	return (0);
