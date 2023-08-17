@@ -2,7 +2,8 @@
 #include "main.h"
 
 /**
- * fizz - prints the numbers from 1 to 100
+ * main - Etry point
+ * Return: 0 is success
  */
 
 void fizz(void)
@@ -33,4 +34,10 @@ void fizz(void)
                 }
                 putchar('\n');
         }
+}
+
+int main(void)
+{
+	fizz();
+	return (0);
 }
