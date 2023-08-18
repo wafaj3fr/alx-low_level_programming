@@ -27,7 +27,7 @@ int main(void)
 		}
 		else
 			putchar("%d ", i);
-		printf("\n");
 	}
+	printf("\n");
 	return (0);
 }
