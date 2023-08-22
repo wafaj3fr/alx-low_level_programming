@@ -10,7 +10,8 @@ int _strlen(char *s)
 {
 	int len;
 
-	len = sizeof(s) / sizeof(s[0]);
+	len = *(&s + 1) - s;
+	_putchar('\n');
 
 	return (len);
 }
