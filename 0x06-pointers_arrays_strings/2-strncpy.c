@@ -1,4 +1,4 @@
-#include "main.h"
+i#include "main.h"
 
 /**
  * _strncpy - copies a string.
@@ -18,7 +18,7 @@ char *_strncpy(char *dest, char *src, int n)
 	}
 	for ( ; i < n; i++)
 	{
-		idest[i] = '\0';
+		*(dest + i) = '\0';
 	}
 	return (dest);
 }
