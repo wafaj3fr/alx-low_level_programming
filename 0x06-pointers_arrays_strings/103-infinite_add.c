@@ -7,6 +7,7 @@
  * @size_r: buffer size
  * Return: Resulting string
  */
+
 char *infinite_add(char *n1, char *n2, char *r, int size_r)
 {
 	int len1 = 0, len2 = 0, c = 0, a, b, sum, biggest;
@@ -30,7 +31,7 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r)
 		if (len1 > 0 && len2 > 0)
 			sum = a + b + c;
 		else if (len1 < 0 && len2 > 0)
-			sum = b + carry;
+			sum = b + c;
 		else if (len1 > 0 && len2 < 0)
 			sum = a + c;
 		else
