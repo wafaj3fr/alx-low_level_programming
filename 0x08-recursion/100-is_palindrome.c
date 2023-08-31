@@ -40,7 +40,7 @@ int palin2(char *a, int len)
  */
 int is_palindrome(char *s)
 {
-	int l;
+	int len;
 
 	l = palin1(s, 0);
 	return (palin2(s, len));
