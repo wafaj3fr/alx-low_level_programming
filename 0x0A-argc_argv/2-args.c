@@ -1,5 +1,5 @@
-i#include <stdio.h>
-#include "holberton.h"
+#include <stdio.h>
+#include "main.h"
 
 /**
  * main - Prints all arguments passed into main
