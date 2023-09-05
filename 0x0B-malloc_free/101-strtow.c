@@ -1,41 +1,6 @@
 #include <stdlib.h>
 
 /**
- * words - counts the number of words.
- * @s: string to be counted.
- * Return: number words.
- */
-
-int words(char *s)
-{
-	int x, n = 0;
-
-	for (x = 0; s[x]; x++)
-	{
-		if (*s == ' ')
-			s++;
-		else
-		{
-			for (; s[x] != ' ' && s[x] != '\0'; x++)
-				s++;
-			n++;
-		}
-	}
-	return (n);
-}
-/**
- * free_memory - frees the memory
- * @p: pointer values passed for freeing
- * @j: counter
- */
-void free_memory(char **p, int j)
-{
-	for (; j > 0;)
-		free(p[--j]);
-	free(p);
-}
-
-/**
  * strtow - function that splits string into words
  * @str: string being passed
  * Return: null if string is empty or null or function fails
