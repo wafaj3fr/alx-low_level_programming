@@ -9,17 +9,17 @@
 
 char *argstostr(int ac, char **av)
 {
-	int size, c, a, b = 0;
-	char *s;
+	int size, count, count1, count2 = 0;
+	char *ptr;
 
 	if (ac == 0 || av == NULL)
 	{
 		return (NULL);
 	}
 
-	for (c = 0; c < ac; c++)
+	for (count = 0; count < ac; count++)
 	{
-		for (a = 0; av[c][a] != '\0'; a++)
+		for (count1 = 0; av[count][count1] != '\0'; count1++)
 		{
 			size += 1;
 		}
@@ -27,22 +27,22 @@ char *argstostr(int ac, char **av)
 	}
 	size += 1;
 
-	s = malloc(sizeof(char) * size);
-	if (s == NULL)
+	ptr = malloc(sizeof(char) * size);
+	if (ptr == NULL)
 	{
-		free(s);
+		free(ptr);
 		return (NULL);
 	}
-	for (c = 0; c < ac; c++)
+	for (count = 0; count < ac; count++)
 	{
-		for (a = 0; av[c][a] != '\0'; a++)
+		for (count1 = 0; av[count][count1] != '\0'; count1++)
 		{
-			s[b] = av[c][a];
-			b++;
+			ptr[count2] = av[count][count1];
+			count2++;
 		}
-		s[b] = '\n';
-		b++;
+		ptr[count2] = '\n';
+		count2++;
 	}
-	s[b] = '\0';
-	return (s);
+	ptr[count2] = '\0';
+	return (ptr);
 }
