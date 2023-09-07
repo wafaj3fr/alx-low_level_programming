@@ -1,7 +1,6 @@
 #include <stdlib.h>
 #include "main.h"
-#include<stdio.h>
-i
+
 /**
  * array_range - creates an array of integers.
  * @min: starting integer.
