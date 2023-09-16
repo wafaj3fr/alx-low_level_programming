@@ -1,4 +1,7 @@
 #include "calc.h"
+#include <stdlib.h>
+#include <stdio.h>
+
 /**
  * main - Entry point
  * @argc: the number of the parameters
