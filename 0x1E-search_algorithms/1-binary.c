@@ -8,17 +8,29 @@
  *
  * Return: Index of the first occurrence of value, or -1
  */
-int linear_search(int *array, size_t size, int value)
+
+int binary_search(int *array, size_t size, int value)
 {
-    if (array == NULL)
-        return (-1);
+	size_t i, left, right;
 
-    for (size_t i = 0; i < size; i++)
-    {
-        printf("Value checked array[%lu] = [%d]\n", i, array[i]);
-        if (array[i] == value)
-            return (i);
-    }
+	if (array == NULL)
+		return (-1);
 
-    return (-1);
+	for (left = 0, right = size - 1; right >= left;)
+	{
+		printf("Searching in array: ");
+		for (i = left; i < right; i++)
+			printf("%d, ", array[i]);
+		printf("%d\n", array[i]);
+
+		i = left + (right - left) / 2;
+		if (array[i] == value)
+			return (i);
+		if (array[i] > value)
+			right = i - 1;
+		else
+			left = i + 1;
+	}
+
+	return (-1);
 }
